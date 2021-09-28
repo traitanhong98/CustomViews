@@ -29,5 +29,11 @@ class ViewController: UIViewController {
         vc.modalPresentationStyle = .overFullScreen
         self.present(vc, animated: true)
     }
+    @IBAction func showPopup(_ sender: Any) {
+        let vc = PopupViewController()
+        self.modalPresentationStyle = .overFullScreen
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true)
+    }
 }
 

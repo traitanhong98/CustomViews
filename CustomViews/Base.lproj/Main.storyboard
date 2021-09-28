@@ -17,17 +17,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fid-IU-Pfj">
-                                <rect key="frame" x="176" y="415" width="62" height="76"/>
+                                <rect key="frame" x="176" y="392" width="62" height="122"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIN-xJ-HlL">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1B7-TA-oFV">
                                         <rect key="frame" x="0.0" y="0.0" width="62" height="30"/>
+                                        <state key="normal" title="Popup"/>
+                                        <connections>
+                                            <action selector="showPopup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YCP-X0-7by"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIN-xJ-HlL">
+                                        <rect key="frame" x="0.0" y="46" width="62" height="30"/>
                                         <state key="normal" title="Segment"/>
                                         <connections>
                                             <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VNQ-eI-owl"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUd-QR-QbM">
-                                        <rect key="frame" x="0.0" y="46" width="62" height="30"/>
+                                        <rect key="frame" x="0.0" y="92" width="62" height="30"/>
                                         <state key="normal" title="TextField"/>
                                         <connections>
                                             <action selector="testTextfieldAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gap-86-HNv"/>

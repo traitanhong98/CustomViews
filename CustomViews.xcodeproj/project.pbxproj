@@ -28,6 +28,10 @@
 		2A9E02BE26FF051C00ACEEE4 /* IncrementInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9E02BD26FF051C00ACEEE4 /* IncrementInputView.xib */; };
 		2A9E02CC2701780900ACEEE4 /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E02CA2701780900ACEEE4 /* TestTableViewCell.swift */; };
 		2A9E02CD2701780900ACEEE4 /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9E02CB2701780900ACEEE4 /* TestTableViewCell.xib */; };
+		2A9E02E42702B33E00ACEEE4 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E02E22702B33E00ACEEE4 /* PopupViewController.swift */; };
+		2A9E02E52702B33E00ACEEE4 /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9E02E32702B33E00ACEEE4 /* PopupViewController.xib */; };
+		2A9E02E82702B3F600ACEEE4 /* BasePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E02E62702B3F600ACEEE4 /* BasePopupViewController.swift */; };
+		2A9E02E92702B3F600ACEEE4 /* BasePopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9E02E72702B3F600ACEEE4 /* BasePopupViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,10 @@
 		2A9E02BD26FF051C00ACEEE4 /* IncrementInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IncrementInputView.xib; sourceTree = "<group>"; };
 		2A9E02CA2701780900ACEEE4 /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
 		2A9E02CB2701780900ACEEE4 /* TestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
+		2A9E02E22702B33E00ACEEE4 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		2A9E02E32702B33E00ACEEE4 /* PopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
+		2A9E02E62702B3F600ACEEE4 /* BasePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePopupViewController.swift; sourceTree = "<group>"; };
+		2A9E02E72702B3F600ACEEE4 /* BasePopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasePopupViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +133,7 @@
 		2A9E026F26FEF70F00ACEEE4 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				2A9E02E12702B32300ACEEE4 /* CustomPopup */,
 				2A9E02C9270177F700ACEEE4 /* Cell */,
 				2A9E02AC26FEF7B500ACEEE4 /* Extension */,
 				2A9E02A026FEF74800ACEEE4 /* Slider */,
@@ -213,6 +222,17 @@
 				2A9E02CB2701780900ACEEE4 /* TestTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		2A9E02E12702B32300ACEEE4 /* CustomPopup */ = {
+			isa = PBXGroup;
+			children = (
+				2A9E02E22702B33E00ACEEE4 /* PopupViewController.swift */,
+				2A9E02E32702B33E00ACEEE4 /* PopupViewController.xib */,
+				2A9E02E62702B3F600ACEEE4 /* BasePopupViewController.swift */,
+				2A9E02E72702B3F600ACEEE4 /* BasePopupViewController.xib */,
+			);
+			path = CustomPopup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,8 +345,10 @@
 				2A9E027D26FEF71100ACEEE4 /* LaunchScreen.storyboard in Resources */,
 				2A9E02A926FEF79100ACEEE4 /* SliderViewController.xib in Resources */,
 				2A9E027A26FEF71100ACEEE4 /* Assets.xcassets in Resources */,
+				2A9E02E52702B33E00ACEEE4 /* PopupViewController.xib in Resources */,
 				2A9E027826FEF70F00ACEEE4 /* Main.storyboard in Resources */,
 				2A9E02BE26FF051C00ACEEE4 /* IncrementInputView.xib in Resources */,
+				2A9E02E92702B3F600ACEEE4 /* BasePopupViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9E02E42702B33E00ACEEE4 /* PopupViewController.swift in Sources */,
 				2A9E02A326FEF75F00ACEEE4 /* SlideSegmentView.swift in Sources */,
 				2A9E02A826FEF79100ACEEE4 /* SliderViewController.swift in Sources */,
 				2A9E027526FEF70F00ACEEE4 /* ViewController.swift in Sources */,
@@ -360,6 +383,7 @@
 				2A9E027126FEF70F00ACEEE4 /* AppDelegate.swift in Sources */,
 				2A9E02AE26FEF7C500ACEEE4 /* View+Extension.swift in Sources */,
 				2A9E027326FEF70F00ACEEE4 /* SceneDelegate.swift in Sources */,
+				2A9E02E82702B3F600ACEEE4 /* BasePopupViewController.swift in Sources */,
 				2A9E02CC2701780900ACEEE4 /* TestTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

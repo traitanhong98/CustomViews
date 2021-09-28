@@ -16,14 +16,46 @@ class PopupViewController: UIViewController {
     }
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func back(_ sender: Any) {
+        dismiss(animated: true)
     }
-    */
-
+    @IBAction func showPopup(_ sender: Any) {
+        let popup = BasePopupViewController()
+        let contentView = UIView(frame: .init(origin: .zero, size: .init(width: 200, height: 100)))
+        contentView.backgroundColor = .blue
+        popup.contentView = contentView
+        popup.popupPosition = .bottom
+        popup.animateStyle = .expanse
+        popup.showPopup(in: self)
+    }
+  
+    @IBAction func showPopup2(_ sender: Any) {
+        let popup = BasePopupViewController()
+        let contentView = UIView(frame: .init(origin: .zero, size: .init(width: 200, height: 100)))
+        contentView.backgroundColor = .blue
+        popup.contentView = contentView
+        popup.popupPosition = .bottom
+        popup.animateStyle = .floatIn
+        popup.showPopup(in: self)
+    }
+    
+    @IBAction func showPopup3(_ sender: Any) {
+        let popup = BasePopupViewController()
+        let contentView = UIView(frame: .init(origin: .zero, size: .init(width: 200, height: 100)))
+        contentView.backgroundColor = .blue
+        popup.contentView = contentView
+        popup.popupPosition = .center
+        popup.animateStyle = .expanse
+        popup.showPopup(in: self)
+    }
+    
+    @IBAction func showPopup4(_ sender: Any) {
+        let popup = BasePopupViewController()
+        let contentView = UIView(frame: .init(origin: .zero, size: .init(width: 200, height: 100)))
+        contentView.backgroundColor = .blue
+        popup.contentView = contentView
+        popup.popupPosition = .center
+        popup.animateStyle = .floatIn
+        popup.showPopup(in: self)
+    }
 }
