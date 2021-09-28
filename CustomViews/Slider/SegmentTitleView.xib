@@ -30,29 +30,13 @@
                         <constraint firstAttribute="width" id="1x6-qf-Qj6"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labeldđ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13S-3A-Vl9">
-                    <rect key="frame" x="186.5" y="507" width="62" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label alskdfj" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6s-TE-Yvg">
-                    <rect key="frame" x="186.5" y="565" width="95" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="13S-3A-Vl9" firstAttribute="top" secondItem="Sdd-yP-wnZ" secondAttribute="bottom" constant="48.5" id="Bqe-hS-XTw"/>
-                <constraint firstItem="13S-3A-Vl9" firstAttribute="leading" secondItem="Sdd-yP-wnZ" secondAttribute="leading" id="GAH-X1-11q"/>
                 <constraint firstAttribute="trailing" secondItem="mtj-jd-ehg" secondAttribute="trailing" id="QTl-vX-Vld"/>
                 <constraint firstItem="mtj-jd-ehg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Qtu-hF-hEy"/>
                 <constraint firstAttribute="bottom" secondItem="mtj-jd-ehg" secondAttribute="bottom" id="TAD-EC-CDH"/>
                 <constraint firstItem="Sdd-yP-wnZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TBl-Te-DkN"/>
-                <constraint firstItem="p6s-TE-Yvg" firstAttribute="top" secondItem="13S-3A-Vl9" secondAttribute="bottom" constant="37" id="Vnz-BF-ZGZ"/>
-                <constraint firstItem="p6s-TE-Yvg" firstAttribute="leading" secondItem="13S-3A-Vl9" secondAttribute="leading" id="bIZ-iv-KN2"/>
                 <constraint firstItem="Sdd-yP-wnZ" firstAttribute="centerY" secondItem="mtj-jd-ehg" secondAttribute="centerY" id="dHC-Ft-dmO"/>
             </constraints>
             <point key="canvasLocation" x="132" y="106"/>
