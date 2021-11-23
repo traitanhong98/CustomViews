@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A7D0CCD2713EB5D00642A2A /* HyperLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7D0CCB2713EB5D00642A2A /* HyperLinkViewController.swift */; };
+		2A7D0CCE2713EB5D00642A2A /* HyperLinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A7D0CCC2713EB5D00642A2A /* HyperLinkViewController.xib */; };
+		2A7D0CD02713EBA700642A2A /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7D0CCF2713EBA700642A2A /* Builder.swift */; };
+		2A9A3FCA2713F05200FA0D9F /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A3FC92713F05200FA0D9F /* CustomLabel.swift */; };
 		2A9E027126FEF70F00ACEEE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E027026FEF70F00ACEEE4 /* AppDelegate.swift */; };
 		2A9E027326FEF70F00ACEEE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E027226FEF70F00ACEEE4 /* SceneDelegate.swift */; };
 		2A9E027526FEF70F00ACEEE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E027426FEF70F00ACEEE4 /* ViewController.swift */; };
@@ -52,6 +56,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A7D0CCB2713EB5D00642A2A /* HyperLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperLinkViewController.swift; sourceTree = "<group>"; };
+		2A7D0CCC2713EB5D00642A2A /* HyperLinkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HyperLinkViewController.xib; sourceTree = "<group>"; };
+		2A7D0CCF2713EBA700642A2A /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		2A9A3FC92713F05200FA0D9F /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		2A9E026D26FEF70F00ACEEE4 /* CustomViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9E027026FEF70F00ACEEE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A9E027226FEF70F00ACEEE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +118,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A7D0CCA2713EB4200642A2A /* HyperLink */ = {
+			isa = PBXGroup;
+			children = (
+				2A7D0CCB2713EB5D00642A2A /* HyperLinkViewController.swift */,
+				2A7D0CCC2713EB5D00642A2A /* HyperLinkViewController.xib */,
+				2A7D0CCF2713EBA700642A2A /* Builder.swift */,
+				2A9A3FC92713F05200FA0D9F /* CustomLabel.swift */,
+			);
+			path = HyperLink;
+			sourceTree = "<group>";
+		};
 		2A9E026426FEF70F00ACEEE4 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +152,7 @@
 		2A9E026F26FEF70F00ACEEE4 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				2A7D0CCA2713EB4200642A2A /* HyperLink */,
 				2A9E02E12702B32300ACEEE4 /* CustomPopup */,
 				2A9E02C9270177F700ACEEE4 /* Cell */,
 				2A9E02AC26FEF7B500ACEEE4 /* Extension */,
@@ -339,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A9E02B926FF04DC00ACEEE4 /* TestTextFieldViewController.xib in Resources */,
+				2A7D0CCE2713EB5D00642A2A /* HyperLinkViewController.xib in Resources */,
 				2A9E02A426FEF75F00ACEEE4 /* SlideSegmentView.xib in Resources */,
 				2A9E02B426FF035E00ACEEE4 /* SegmentTitleView.xib in Resources */,
 				2A9E02CD2701780900ACEEE4 /* TestTableViewCell.xib in Resources */,
@@ -374,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A9E02E42702B33E00ACEEE4 /* PopupViewController.swift in Sources */,
+				2A9A3FCA2713F05200FA0D9F /* CustomLabel.swift in Sources */,
 				2A9E02A326FEF75F00ACEEE4 /* SlideSegmentView.swift in Sources */,
 				2A9E02A826FEF79100ACEEE4 /* SliderViewController.swift in Sources */,
 				2A9E027526FEF70F00ACEEE4 /* ViewController.swift in Sources */,
@@ -382,8 +404,10 @@
 				2A9E02B826FF04DC00ACEEE4 /* TestTextFieldViewController.swift in Sources */,
 				2A9E027126FEF70F00ACEEE4 /* AppDelegate.swift in Sources */,
 				2A9E02AE26FEF7C500ACEEE4 /* View+Extension.swift in Sources */,
+				2A7D0CD02713EBA700642A2A /* Builder.swift in Sources */,
 				2A9E027326FEF70F00ACEEE4 /* SceneDelegate.swift in Sources */,
 				2A9E02E82702B3F600ACEEE4 /* BasePopupViewController.swift in Sources */,
+				2A7D0CCD2713EB5D00642A2A /* HyperLinkViewController.swift in Sources */,
 				2A9E02CC2701780900ACEEE4 /* TestTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

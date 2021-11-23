@@ -35,5 +35,11 @@ class ViewController: UIViewController {
         vc.modalPresentationStyle = .overFullScreen
         self.present(vc, animated: true)
     }
+    @IBAction func hyperLink(_ sender: Any) {
+        let vc = HyperLinkViewController()
+        self.modalPresentationStyle = .overFullScreen
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true)
+    }
 }
 

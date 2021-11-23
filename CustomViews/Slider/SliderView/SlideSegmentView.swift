@@ -34,6 +34,7 @@ class SlideSegmentView: UIView {
     weak var dataSource: SlideSegmentViewDataSource?
     var selectedSliderIndex = 0
     var animateDuration: Double = 0.2
+    var ideaWithForItem: CGFloat = .infinity
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadViewFromNib()
@@ -77,17 +78,25 @@ class SlideSegmentView: UIView {
         containerView = UIView()
         containerView.frame = contentView.bounds
         let numberOfButton = dataSource.numberOfButtonInSegmentView(self)
-        let withOfButton = frame.width / CGFloat(numberOfButton)
+        let availableWidthForButton = frame.width / CGFloat(numberOfButton)
+        let withOfButton = availableWidthForButton > ideaWithForItem ? ideaWithForItem : availableWidthForButton
+        var currentX: CGFloat = 0
         slideView.frame = .init(x: CGFloat(selectedSliderIndex) * withOfButton, y: 0, width: withOfButton, height: frame.height)
         slideView.backgroundColor = delegate.slideSegmentView(self, selectedColorAtIndex: selectedSliderIndex)
+        slideView.layer.cornerRadius = frame.height / 2
+        self.layer.cornerRadius = frame.height / 2
         containerView.addSubview(slideView)
         for index in 0..<numberOfButton {
             let buttonView = delegate.slideSegmentView(self, viewForButtonAtIndex: index)
-            buttonView.frame = .init(x: CGFloat(index) * withOfButton, y: 0, width: withOfButton, height: frame.height)
+            buttonView.frame = .init(x: currentX,
+                                     y: 0,
+                                     width: withOfButton,
+                                     height: frame.height)
             buttonView.tag = index
             let gesture = UITapGestureRecognizer(target: self, action: #selector(indexSelected(_:)))
             buttonView.addGestureRecognizer(gesture)
             containerView.addSubview(buttonView)
+            currentX += buttonView.frame.width
         }
         contentView.addSubview(containerView)
     }

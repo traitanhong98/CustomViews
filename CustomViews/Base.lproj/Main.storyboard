@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fid-IU-Pfj">
-                                <rect key="frame" x="131" y="392" width="152" height="122"/>
+                                <rect key="frame" x="131" y="369" width="152" height="168"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1B7-TA-oFV">
                                         <rect key="frame" x="0.0" y="0.0" width="152" height="30"/>
@@ -38,6 +38,13 @@
                                         <state key="normal" title="TextField Fit Keyboard"/>
                                         <connections>
                                             <action selector="testTextfieldAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gap-86-HNv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEf-NK-dYd">
+                                        <rect key="frame" x="0.0" y="138" width="152" height="30"/>
+                                        <state key="normal" title="HyperLink"/>
+                                        <connections>
+                                            <action selector="hyperLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aIe-x0-dOq"/>
                                         </connections>
                                     </button>
                                 </subviews>
