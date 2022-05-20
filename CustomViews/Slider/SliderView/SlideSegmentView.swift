@@ -13,6 +13,7 @@ import UIKit
     @objc func slideSegmentView(_ view: SlideSegmentView, viewForButtonAtIndex index: Int) -> UIView
     @objc func slideSegmentView(_ view: SlideSegmentView, selectedColorAtIndex index: Int) -> UIColor
     // Selection
+    @objc optional func slideSegmentViewDidFinishAnimate(_ view: SlideSegmentView)
     @objc optional func slideSegmnetView(_ view: SlideSegmentView, willSelectSegmentAtIndex index: Int) -> Bool
     @objc optional func slideSegmentView(_ view: SlideSegmentView, didSelectSegmentAtIndex index: Int)
 }
@@ -20,10 +21,9 @@ import UIKit
 @objc protocol SlideSegmentViewDataSource: AnyObject {
     @objc func numberOfButtonInSegmentView(_ segmentView: SlideSegmentView) -> Int
 }
+
 @IBDesignable
 class SlideSegmentView: UIView {
-    
-    @IBOutlet weak var contentView: UIView!
     var containerView = UIView()
     lazy var slideView: UIView = {
         let slideView = UIView()
@@ -35,38 +35,27 @@ class SlideSegmentView: UIView {
     var selectedSliderIndex = 0
     var animateDuration: Double = 0.2
     var ideaWithForItem: CGFloat = .infinity
+    var isAutoResizing: Bool = false
+    // MARK: - LifeCycle
     override init(frame: CGRect) {
         super.init(frame: frame)
-        loadViewFromNib()
-        setupUI()
     }
     
     init() {
         super.init(frame: .zero)
-        loadViewFromNib()
-        setupUI()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        loadViewFromNib()
-        setupUI()
-    }
-    override func draw(_ rect: CGRect) {
-        super.draw(rect)
-        self.backgroundColor = .red
-    }
-    func setupUI() {
     }
     
     override func layoutSubviews() {
-        print("LayOutSubView")
         drawUI()
     }
-    
+    // MARK: - Func
     func reloadData() {
         selectedSliderIndex = 0
-        drawUI()
+        setNeedsLayout()
     }
     
     func drawUI() {
@@ -76,7 +65,8 @@ class SlideSegmentView: UIView {
         }
         containerView.removeFromSuperview()
         containerView = UIView()
-        containerView.frame = contentView.bounds
+        isAutoResizing ? self.frame.size.width = 0 : nil
+        containerView.frame = self.bounds
         let numberOfButton = dataSource.numberOfButtonInSegmentView(self)
         let availableWidthForButton = frame.width / CGFloat(numberOfButton)
         let withOfButton = availableWidthForButton > ideaWithForItem ? ideaWithForItem : availableWidthForButton
@@ -90,15 +80,16 @@ class SlideSegmentView: UIView {
             let buttonView = delegate.slideSegmentView(self, viewForButtonAtIndex: index)
             buttonView.frame = .init(x: currentX,
                                      y: 0,
-                                     width: withOfButton,
+                                     width: isAutoResizing ? buttonView.frame.width : withOfButton,
                                      height: frame.height)
             buttonView.tag = index
             let gesture = UITapGestureRecognizer(target: self, action: #selector(indexSelected(_:)))
             buttonView.addGestureRecognizer(gesture)
             containerView.addSubview(buttonView)
             currentX += buttonView.frame.width
+            isAutoResizing ? self.frame.size.width += (isAutoResizing ? buttonView.frame.width : withOfButton) : nil
         }
-        contentView.addSubview(containerView)
+        addSubview(containerView)
     }
     
     @objc private func indexSelected(_ gesture: UITapGestureRecognizer) {
@@ -106,16 +97,22 @@ class SlideSegmentView: UIView {
             return
         }
         let viewIndex = gesture.view?.tag ?? -1
-        guard delegate.slideSegmnetView?(self, willSelectSegmentAtIndex: viewIndex) ?? false else {
+        guard delegate.slideSegmnetView?(self, willSelectSegmentAtIndex: viewIndex) ?? true else {
             return
         }
         delegate.slideSegmentView?(self, didSelectSegmentAtIndex: viewIndex)
         let numberOfButton = dataSource?.numberOfButtonInSegmentView(self) ?? 0
-        let withOfButton = frame.width / CGFloat(numberOfButton)
+        var withOfButton = frame.width / CGFloat(numberOfButton)
+        if isAutoResizing {
+            withOfButton = gesture.view?.frame.width ?? 0
+        }
         selectedSliderIndex = viewIndex
         UIView.animate(withDuration: animateDuration) {
             self.slideView.frame = .init(x: CGFloat(viewIndex) * withOfButton, y: 0, width: withOfButton, height: self.frame.height)
             self.slideView.backgroundColor = delegate.slideSegmentView(self, selectedColorAtIndex: viewIndex)
+        } completion: { [weak self] _ in
+            guard let self = self else { return }
+            self.delegate?.slideSegmentViewDidFinishAnimate?(self)
         }
     }
 }

@@ -42,12 +42,11 @@ class BasePopupViewController: UIViewController {
         }
     }
     
-    func showContentView() {
+    private func showContentView() {
         guard let contentView = contentView else { return }
         contentView.alpha = 0
         self.view.addSubview(contentView)
         let originSize = contentView.frame.size
-        
         switch self.animateStyle {
         case .expanse:
             contentView.frame.size = .init(width: originSize.width / 1.5, height:  originSize.height / 1.5)
@@ -88,7 +87,7 @@ class BasePopupViewController: UIViewController {
         }
     }
     
-    func hideContentView(completionBlock: @escaping ()-> Void) {
+    private func hideContentView(completionBlock: @escaping ()-> Void) {
         guard let contentView = contentView else { return }
         UIView.animate(withDuration: animateDuration) {
             switch self.animateStyle {

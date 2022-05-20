@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A60DF732836301B00AFE8E4 /* MultiTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60DF722836301B00AFE8E4 /* MultiTableView.m */; };
+		2A60DF782836314900AFE8E4 /* ThemeSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60DF772836314900AFE8E4 /* ThemeSpinner.m */; };
+		2A60DF7A283631AD00AFE8E4 /* H_MultiTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A60DF79283631AD00AFE8E4 /* H_MultiTableView.swift */; };
+		2A60DF7E28363F3700AFE8E4 /* MultiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A60DF7C28363F3700AFE8E4 /* MultiTableViewController.swift */; };
+		2A60DF7F28363F3700AFE8E4 /* MultiTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A60DF7D28363F3700AFE8E4 /* MultiTableViewController.xib */; };
 		2A7D0CCD2713EB5D00642A2A /* HyperLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7D0CCB2713EB5D00642A2A /* HyperLinkViewController.swift */; };
 		2A7D0CCE2713EB5D00642A2A /* HyperLinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A7D0CCC2713EB5D00642A2A /* HyperLinkViewController.xib */; };
 		2A7D0CD02713EBA700642A2A /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7D0CCF2713EBA700642A2A /* Builder.swift */; };
+		2A8061F2274DD25E00A9DE44 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8061F0274DD25D00A9DE44 /* LabelViewController.swift */; };
+		2A8061F3274DD25E00A9DE44 /* LabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8061F1274DD25D00A9DE44 /* LabelViewController.xib */; };
+		2A8061F7274DD88600A9DE44 /* CustomSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8061F6274DD88600A9DE44 /* CustomSegment.swift */; };
+		2A85032E274DE141008616A0 /* AttributedStringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A85032D274DE141008616A0 /* AttributedStringBuilder.swift */; };
 		2A9A3FCA2713F05200FA0D9F /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A3FC92713F05200FA0D9F /* CustomLabel.swift */; };
 		2A9E027126FEF70F00ACEEE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E027026FEF70F00ACEEE4 /* AppDelegate.swift */; };
 		2A9E027326FEF70F00ACEEE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E027226FEF70F00ACEEE4 /* SceneDelegate.swift */; };
@@ -20,7 +29,6 @@
 		2A9E028826FEF71100ACEEE4 /* CustomViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E028726FEF71100ACEEE4 /* CustomViewsTests.swift */; };
 		2A9E029326FEF71100ACEEE4 /* CustomViewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E029226FEF71100ACEEE4 /* CustomViewsUITests.swift */; };
 		2A9E02A326FEF75F00ACEEE4 /* SlideSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E02A126FEF75F00ACEEE4 /* SlideSegmentView.swift */; };
-		2A9E02A426FEF75F00ACEEE4 /* SlideSegmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9E02A226FEF75F00ACEEE4 /* SlideSegmentView.xib */; };
 		2A9E02A826FEF79100ACEEE4 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E02A626FEF79100ACEEE4 /* SliderViewController.swift */; };
 		2A9E02A926FEF79100ACEEE4 /* SliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9E02A726FEF79100ACEEE4 /* SliderViewController.xib */; };
 		2A9E02AE26FEF7C500ACEEE4 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E02AD26FEF7C500ACEEE4 /* View+Extension.swift */; };
@@ -36,6 +44,24 @@
 		2A9E02E52702B33E00ACEEE4 /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9E02E32702B33E00ACEEE4 /* PopupViewController.xib */; };
 		2A9E02E82702B3F600ACEEE4 /* BasePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E02E62702B3F600ACEEE4 /* BasePopupViewController.swift */; };
 		2A9E02E92702B3F600ACEEE4 /* BasePopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9E02E72702B3F600ACEEE4 /* BasePopupViewController.xib */; };
+		2AC7E96A280E65B70061EF16 /* CTRun+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC7E95E280E65B70061EF16 /* CTRun+Swift.swift */; };
+		2AC7E96B280E65B70061EF16 /* CTStringAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC7E95F280E65B70061EF16 /* CTStringAttribute.swift */; };
+		2AC7E96C280E65B70061EF16 /* CTLine+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC7E960280E65B70061EF16 /* CTLine+Swift.swift */; };
+		2AC7E96D280E65B70061EF16 /* NSRange+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC7E961280E65B70061EF16 /* NSRange+Helpers.swift */; };
+		2AC7E96E280E65B70061EF16 /* FontManager+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC7E962280E65B70061EF16 /* FontManager+Swift.swift */; };
+		2AC7E96F280E65B70061EF16 /* CTRubyAnnotation+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC7E963280E65B70061EF16 /* CTRubyAnnotation+Swift.swift */; };
+		2AC7E970280E65B70061EF16 /* CTFont+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC7E964280E65B70061EF16 /* CTFont+Swift.swift */; };
+		2AC7E971280E65B70061EF16 /* CTFrame+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC7E965280E65B70061EF16 /* CTFrame+Swift.swift */; };
+		2AC7E972280E65B70061EF16 /* Array+CGGlyph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC7E966280E65B70061EF16 /* Array+CGGlyph.swift */; };
+		2AC7E973280E65B70061EF16 /* CTGlyphInfo+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC7E967280E65B70061EF16 /* CTGlyphInfo+Swift.swift */; };
+		2AC7E974280E65B70061EF16 /* CFAttributedString+CoreText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC7E968280E65B70061EF16 /* CFAttributedString+CoreText.swift */; };
+		2AC7E975280E65B70061EF16 /* CTFramesetter+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC7E969280E65B70061EF16 /* CTFramesetter+Swift.swift */; };
+		2AF7A51D28164C60005E60AF /* TestStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF7A51B28164C60005E60AF /* TestStackViewController.swift */; };
+		2AF7A51E28164C60005E60AF /* TestStackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AF7A51C28164C60005E60AF /* TestStackViewController.xib */; };
+		2AF7A52028164C75005E60AF /* LabelSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF7A51F28164C75005E60AF /* LabelSubView.swift */; };
+		2AF7A52228164C7E005E60AF /* LabelSubView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AF7A52128164C7E005E60AF /* LabelSubView.xib */; };
+		2AF7A52428164C8E005E60AF /* ConstrantSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF7A52328164C8E005E60AF /* ConstrantSubView.swift */; };
+		2AF7A52628164C9B005E60AF /* ConstrantSubView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AF7A52528164C9B005E60AF /* ConstrantSubView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,9 +82,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A60DF702836301900AFE8E4 /* CustomViews-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomViews-Bridging-Header.h"; sourceTree = "<group>"; };
+		2A60DF712836301A00AFE8E4 /* MultiTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiTableView.h; sourceTree = "<group>"; };
+		2A60DF722836301B00AFE8E4 /* MultiTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiTableView.m; sourceTree = "<group>"; };
+		2A60DF762836314800AFE8E4 /* ThemeSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeSpinner.h; sourceTree = "<group>"; };
+		2A60DF772836314900AFE8E4 /* ThemeSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeSpinner.m; sourceTree = "<group>"; };
+		2A60DF79283631AD00AFE8E4 /* H_MultiTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H_MultiTableView.swift; sourceTree = "<group>"; };
+		2A60DF7C28363F3700AFE8E4 /* MultiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiTableViewController.swift; sourceTree = "<group>"; };
+		2A60DF7D28363F3700AFE8E4 /* MultiTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultiTableViewController.xib; sourceTree = "<group>"; };
 		2A7D0CCB2713EB5D00642A2A /* HyperLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperLinkViewController.swift; sourceTree = "<group>"; };
 		2A7D0CCC2713EB5D00642A2A /* HyperLinkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HyperLinkViewController.xib; sourceTree = "<group>"; };
 		2A7D0CCF2713EBA700642A2A /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		2A8061F0274DD25D00A9DE44 /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
+		2A8061F1274DD25D00A9DE44 /* LabelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelViewController.xib; sourceTree = "<group>"; };
+		2A8061F6274DD88600A9DE44 /* CustomSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegment.swift; sourceTree = "<group>"; };
+		2A85032D274DE141008616A0 /* AttributedStringBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringBuilder.swift; sourceTree = "<group>"; };
 		2A9A3FC92713F05200FA0D9F /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		2A9E026D26FEF70F00ACEEE4 /* CustomViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9E027026FEF70F00ACEEE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,7 +113,6 @@
 		2A9E029226FEF71100ACEEE4 /* CustomViewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewsUITests.swift; sourceTree = "<group>"; };
 		2A9E029426FEF71100ACEEE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A9E02A126FEF75F00ACEEE4 /* SlideSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideSegmentView.swift; sourceTree = "<group>"; };
-		2A9E02A226FEF75F00ACEEE4 /* SlideSegmentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SlideSegmentView.xib; sourceTree = "<group>"; };
 		2A9E02A626FEF79100ACEEE4 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		2A9E02A726FEF79100ACEEE4 /* SliderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderViewController.xib; sourceTree = "<group>"; };
 		2A9E02AD26FEF7C500ACEEE4 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
@@ -91,6 +128,24 @@
 		2A9E02E32702B33E00ACEEE4 /* PopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
 		2A9E02E62702B3F600ACEEE4 /* BasePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePopupViewController.swift; sourceTree = "<group>"; };
 		2A9E02E72702B3F600ACEEE4 /* BasePopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasePopupViewController.xib; sourceTree = "<group>"; };
+		2AC7E95E280E65B70061EF16 /* CTRun+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CTRun+Swift.swift"; sourceTree = "<group>"; };
+		2AC7E95F280E65B70061EF16 /* CTStringAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTStringAttribute.swift; sourceTree = "<group>"; };
+		2AC7E960280E65B70061EF16 /* CTLine+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CTLine+Swift.swift"; sourceTree = "<group>"; };
+		2AC7E961280E65B70061EF16 /* NSRange+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSRange+Helpers.swift"; sourceTree = "<group>"; };
+		2AC7E962280E65B70061EF16 /* FontManager+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FontManager+Swift.swift"; sourceTree = "<group>"; };
+		2AC7E963280E65B70061EF16 /* CTRubyAnnotation+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CTRubyAnnotation+Swift.swift"; sourceTree = "<group>"; };
+		2AC7E964280E65B70061EF16 /* CTFont+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CTFont+Swift.swift"; sourceTree = "<group>"; };
+		2AC7E965280E65B70061EF16 /* CTFrame+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CTFrame+Swift.swift"; sourceTree = "<group>"; };
+		2AC7E966280E65B70061EF16 /* Array+CGGlyph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+CGGlyph.swift"; sourceTree = "<group>"; };
+		2AC7E967280E65B70061EF16 /* CTGlyphInfo+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CTGlyphInfo+Swift.swift"; sourceTree = "<group>"; };
+		2AC7E968280E65B70061EF16 /* CFAttributedString+CoreText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CFAttributedString+CoreText.swift"; sourceTree = "<group>"; };
+		2AC7E969280E65B70061EF16 /* CTFramesetter+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CTFramesetter+Swift.swift"; sourceTree = "<group>"; };
+		2AF7A51B28164C60005E60AF /* TestStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStackViewController.swift; sourceTree = "<group>"; };
+		2AF7A51C28164C60005E60AF /* TestStackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestStackViewController.xib; sourceTree = "<group>"; };
+		2AF7A51F28164C75005E60AF /* LabelSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelSubView.swift; sourceTree = "<group>"; };
+		2AF7A52128164C7E005E60AF /* LabelSubView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelSubView.xib; sourceTree = "<group>"; };
+		2AF7A52328164C8E005E60AF /* ConstrantSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstrantSubView.swift; sourceTree = "<group>"; };
+		2AF7A52528164C9B005E60AF /* ConstrantSubView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConstrantSubView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +173,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A60DF6F2836300B00AFE8E4 /* MultiTableView */ = {
+			isa = PBXGroup;
+			children = (
+				2A60DF712836301A00AFE8E4 /* MultiTableView.h */,
+				2A60DF722836301B00AFE8E4 /* MultiTableView.m */,
+				2A60DF762836314800AFE8E4 /* ThemeSpinner.h */,
+				2A60DF772836314900AFE8E4 /* ThemeSpinner.m */,
+				2A60DF702836301900AFE8E4 /* CustomViews-Bridging-Header.h */,
+				2A60DF79283631AD00AFE8E4 /* H_MultiTableView.swift */,
+				2A60DF7C28363F3700AFE8E4 /* MultiTableViewController.swift */,
+				2A60DF7D28363F3700AFE8E4 /* MultiTableViewController.xib */,
+			);
+			path = MultiTableView;
+			sourceTree = "<group>";
+		};
 		2A7D0CCA2713EB4200642A2A /* HyperLink */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +197,15 @@
 				2A9A3FC92713F05200FA0D9F /* CustomLabel.swift */,
 			);
 			path = HyperLink;
+			sourceTree = "<group>";
+		};
+		2A8061EF274DD24900A9DE44 /* TestLabel */ = {
+			isa = PBXGroup;
+			children = (
+				2A8061F0274DD25D00A9DE44 /* LabelViewController.swift */,
+				2A8061F1274DD25D00A9DE44 /* LabelViewController.xib */,
+			);
+			path = TestLabel;
 			sourceTree = "<group>";
 		};
 		2A9E026426FEF70F00ACEEE4 = {
@@ -152,6 +231,10 @@
 		2A9E026F26FEF70F00ACEEE4 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				2A60DF6F2836300B00AFE8E4 /* MultiTableView */,
+				2AF7A51A28164C4C005E60AF /* StackView */,
+				2AC7E95D280E65B70061EF16 /* CoreTextSwift */,
+				2A8061EF274DD24900A9DE44 /* TestLabel */,
 				2A7D0CCA2713EB4200642A2A /* HyperLink */,
 				2A9E02E12702B32300ACEEE4 /* CustomPopup */,
 				2A9E02C9270177F700ACEEE4 /* Cell */,
@@ -203,7 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				2A9E02A126FEF75F00ACEEE4 /* SlideSegmentView.swift */,
-				2A9E02A226FEF75F00ACEEE4 /* SlideSegmentView.xib */,
+				2A8061F6274DD88600A9DE44 /* CustomSegment.swift */,
 			);
 			path = SliderView;
 			sourceTree = "<group>";
@@ -211,6 +294,7 @@
 		2A9E02AC26FEF7B500ACEEE4 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				2A85032D274DE141008616A0 /* AttributedStringBuilder.swift */,
 				2A9E02AD26FEF7C500ACEEE4 /* View+Extension.swift */,
 			);
 			path = Extension;
@@ -253,6 +337,38 @@
 				2A9E02E72702B3F600ACEEE4 /* BasePopupViewController.xib */,
 			);
 			path = CustomPopup;
+			sourceTree = "<group>";
+		};
+		2AC7E95D280E65B70061EF16 /* CoreTextSwift */ = {
+			isa = PBXGroup;
+			children = (
+				2AC7E95E280E65B70061EF16 /* CTRun+Swift.swift */,
+				2AC7E95F280E65B70061EF16 /* CTStringAttribute.swift */,
+				2AC7E960280E65B70061EF16 /* CTLine+Swift.swift */,
+				2AC7E961280E65B70061EF16 /* NSRange+Helpers.swift */,
+				2AC7E962280E65B70061EF16 /* FontManager+Swift.swift */,
+				2AC7E963280E65B70061EF16 /* CTRubyAnnotation+Swift.swift */,
+				2AC7E964280E65B70061EF16 /* CTFont+Swift.swift */,
+				2AC7E965280E65B70061EF16 /* CTFrame+Swift.swift */,
+				2AC7E966280E65B70061EF16 /* Array+CGGlyph.swift */,
+				2AC7E967280E65B70061EF16 /* CTGlyphInfo+Swift.swift */,
+				2AC7E968280E65B70061EF16 /* CFAttributedString+CoreText.swift */,
+				2AC7E969280E65B70061EF16 /* CTFramesetter+Swift.swift */,
+			);
+			path = CoreTextSwift;
+			sourceTree = "<group>";
+		};
+		2AF7A51A28164C4C005E60AF /* StackView */ = {
+			isa = PBXGroup;
+			children = (
+				2AF7A51B28164C60005E60AF /* TestStackViewController.swift */,
+				2AF7A51C28164C60005E60AF /* TestStackViewController.xib */,
+				2AF7A51F28164C75005E60AF /* LabelSubView.swift */,
+				2AF7A52128164C7E005E60AF /* LabelSubView.xib */,
+				2AF7A52328164C8E005E60AF /* ConstrantSubView.swift */,
+				2AF7A52528164C9B005E60AF /* ConstrantSubView.xib */,
+			);
+			path = StackView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +438,7 @@
 				TargetAttributes = {
 					2A9E026C26FEF70F00ACEEE4 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1330;
 					};
 					2A9E028226FEF71100ACEEE4 = {
 						CreatedOnToolsVersion = 12.5;
@@ -360,16 +477,20 @@
 			files = (
 				2A9E02B926FF04DC00ACEEE4 /* TestTextFieldViewController.xib in Resources */,
 				2A7D0CCE2713EB5D00642A2A /* HyperLinkViewController.xib in Resources */,
-				2A9E02A426FEF75F00ACEEE4 /* SlideSegmentView.xib in Resources */,
 				2A9E02B426FF035E00ACEEE4 /* SegmentTitleView.xib in Resources */,
 				2A9E02CD2701780900ACEEE4 /* TestTableViewCell.xib in Resources */,
+				2AF7A52228164C7E005E60AF /* LabelSubView.xib in Resources */,
 				2A9E027D26FEF71100ACEEE4 /* LaunchScreen.storyboard in Resources */,
 				2A9E02A926FEF79100ACEEE4 /* SliderViewController.xib in Resources */,
 				2A9E027A26FEF71100ACEEE4 /* Assets.xcassets in Resources */,
 				2A9E02E52702B33E00ACEEE4 /* PopupViewController.xib in Resources */,
 				2A9E027826FEF70F00ACEEE4 /* Main.storyboard in Resources */,
+				2AF7A51E28164C60005E60AF /* TestStackViewController.xib in Resources */,
+				2AF7A52628164C9B005E60AF /* ConstrantSubView.xib in Resources */,
 				2A9E02BE26FF051C00ACEEE4 /* IncrementInputView.xib in Resources */,
+				2A8061F3274DD25E00A9DE44 /* LabelViewController.xib in Resources */,
 				2A9E02E92702B3F600ACEEE4 /* BasePopupViewController.xib in Resources */,
+				2A60DF7F28363F3700AFE8E4 /* MultiTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,18 +517,40 @@
 			files = (
 				2A9E02E42702B33E00ACEEE4 /* PopupViewController.swift in Sources */,
 				2A9A3FCA2713F05200FA0D9F /* CustomLabel.swift in Sources */,
+				2AF7A52428164C8E005E60AF /* ConstrantSubView.swift in Sources */,
+				2AC7E970280E65B70061EF16 /* CTFont+Swift.swift in Sources */,
+				2A8061F7274DD88600A9DE44 /* CustomSegment.swift in Sources */,
+				2AC7E96F280E65B70061EF16 /* CTRubyAnnotation+Swift.swift in Sources */,
 				2A9E02A326FEF75F00ACEEE4 /* SlideSegmentView.swift in Sources */,
+				2A60DF782836314900AFE8E4 /* ThemeSpinner.m in Sources */,
+				2A85032E274DE141008616A0 /* AttributedStringBuilder.swift in Sources */,
+				2A8061F2274DD25E00A9DE44 /* LabelViewController.swift in Sources */,
 				2A9E02A826FEF79100ACEEE4 /* SliderViewController.swift in Sources */,
 				2A9E027526FEF70F00ACEEE4 /* ViewController.swift in Sources */,
+				2AC7E96A280E65B70061EF16 /* CTRun+Swift.swift in Sources */,
 				2A9E02BC26FF051100ACEEE4 /* IncrementInputView.swift in Sources */,
 				2A9E02B226FF035200ACEEE4 /* SegmentTitleView.swift in Sources */,
+				2AC7E973280E65B70061EF16 /* CTGlyphInfo+Swift.swift in Sources */,
+				2AC7E96E280E65B70061EF16 /* FontManager+Swift.swift in Sources */,
+				2AC7E975280E65B70061EF16 /* CTFramesetter+Swift.swift in Sources */,
+				2A60DF732836301B00AFE8E4 /* MultiTableView.m in Sources */,
 				2A9E02B826FF04DC00ACEEE4 /* TestTextFieldViewController.swift in Sources */,
 				2A9E027126FEF70F00ACEEE4 /* AppDelegate.swift in Sources */,
+				2AF7A52028164C75005E60AF /* LabelSubView.swift in Sources */,
+				2AC7E974280E65B70061EF16 /* CFAttributedString+CoreText.swift in Sources */,
 				2A9E02AE26FEF7C500ACEEE4 /* View+Extension.swift in Sources */,
+				2AC7E972280E65B70061EF16 /* Array+CGGlyph.swift in Sources */,
+				2AC7E96C280E65B70061EF16 /* CTLine+Swift.swift in Sources */,
+				2AC7E971280E65B70061EF16 /* CTFrame+Swift.swift in Sources */,
 				2A7D0CD02713EBA700642A2A /* Builder.swift in Sources */,
+				2AF7A51D28164C60005E60AF /* TestStackViewController.swift in Sources */,
 				2A9E027326FEF70F00ACEEE4 /* SceneDelegate.swift in Sources */,
+				2AC7E96B280E65B70061EF16 /* CTStringAttribute.swift in Sources */,
+				2AC7E96D280E65B70061EF16 /* NSRange+Helpers.swift in Sources */,
 				2A9E02E82702B3F600ACEEE4 /* BasePopupViewController.swift in Sources */,
 				2A7D0CCD2713EB5D00642A2A /* HyperLinkViewController.swift in Sources */,
+				2A60DF7A283631AD00AFE8E4 /* H_MultiTableView.swift in Sources */,
+				2A60DF7E28363F3700AFE8E4 /* MultiTableViewController.swift in Sources */,
 				2A9E02CC2701780900ACEEE4 /* TestTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,6 +727,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CustomViews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -592,6 +736,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hoangnm.CustomViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CustomViews/MultiTableView/CustomViews-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -602,6 +748,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CustomViews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -610,6 +757,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hoangnm.CustomViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CustomViews/MultiTableView/CustomViews-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

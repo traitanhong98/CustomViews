@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MultiTableViewController" customModule="CustomViews" customModuleProvider="target">
+            <connections>
+                <outlet property="multiTableView" destination="Rha-wA-mPs" id="9MO-jU-NL8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rha-wA-mPs" customClass="H_MultiTableView" customModule="CustomViews" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YA-cO-WTq">
+                    <rect key="frame" x="334" y="144" width="67" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="67" id="Sl7-xn-a3S"/>
+                        <constraint firstAttribute="height" constant="31" id="x9x-NS-8ia"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="tap:" destination="-1" eventType="touchUpInside" id="vo7-xi-WID"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Rha-wA-mPs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="23Q-lM-YbD"/>
+                <constraint firstItem="Rha-wA-mPs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8nM-4g-hUc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rha-wA-mPs" secondAttribute="trailing" id="PDo-pM-QsQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="1YA-cO-WTq" secondAttribute="top" constant="-100" id="iHq-BI-FyP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1YA-cO-WTq" secondAttribute="trailing" constant="13" id="wde-R6-7Le"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Rha-wA-mPs" secondAttribute="bottom" id="wf7-85-7mB"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="126"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
