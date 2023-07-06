@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="LZv-9v-ZrJ">
-                    <rect key="frame" x="147" y="369" width="120" height="168"/>
+                    <rect key="frame" x="147" y="371" width="120" height="168"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mW-OZ-g9g">
                             <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
@@ -37,7 +38,6 @@
                             <state key="normal" title="Bottom float"/>
                             <connections>
                                 <action selector="showPopup2:" destination="-1" eventType="touchUpInside" id="F0O-oQ-fCP"/>
-                                <action selector="showPopup:" destination="-1" eventType="touchUpInside" id="l8z-tW-oPC"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgJ-nL-tuN">
@@ -45,7 +45,6 @@
                             <state key="normal" title="Center expand"/>
                             <connections>
                                 <action selector="showPopup3:" destination="-1" eventType="touchUpInside" id="5bg-4A-6Jz"/>
-                                <action selector="showPopup:" destination="-1" eventType="touchUpInside" id="oVx-Bg-7vW"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykN-SX-gHy">
@@ -53,13 +52,12 @@
                             <state key="normal" title="Center float"/>
                             <connections>
                                 <action selector="showPopup4:" destination="-1" eventType="touchUpInside" id="GDc-9S-3Xm"/>
-                                <action selector="showPopup:" destination="-1" eventType="touchUpInside" id="vaD-Yf-Cln"/>
                             </connections>
                         </button>
                     </subviews>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ja1-Ot-ixU">
-                    <rect key="frame" x="16" y="60" width="34" height="30"/>
+                    <rect key="frame" x="16" y="64" width="34" height="30"/>
                     <state key="normal" title="Back"/>
                     <connections>
                         <action selector="back:" destination="-1" eventType="touchUpInside" id="W36-6m-lub"/>

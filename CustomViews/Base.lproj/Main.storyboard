@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fid-IU-Pfj">
-                                <rect key="frame" x="131" y="345.5" width="152" height="215"/>
+                                <rect key="frame" x="131" y="346" width="152" height="218.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1B7-TA-oFV">
                                         <rect key="frame" x="0.0" y="0.0" width="152" height="30"/>
@@ -49,7 +49,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEV-IQ-89M">
-                                        <rect key="frame" x="0.0" y="184" width="152" height="31"/>
+                                        <rect key="frame" x="0.0" y="184" width="152" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="TestTextSize"/>
                                         <connections>
@@ -58,10 +58,20 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFx-Wt-SoB" customClass="HSwitchView" customModule="CustomViews" customModuleProvider="target">
+                                <rect key="frame" x="12" y="148" width="50" height="25"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xFx-Wt-SoB" secondAttribute="height" multiplier="2:1" id="1pm-Ty-8xV"/>
+                                    <constraint firstAttribute="width" constant="50" id="Eny-h5-LUO"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="xFx-Wt-SoB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="Rra-p2-9ej"/>
+                            <constraint firstItem="xFx-Wt-SoB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="c8T-Xa-UQA"/>
                             <constraint firstItem="fid-IU-Pfj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hNU-yN-3KU"/>
                             <constraint firstItem="fid-IU-Pfj" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="w8m-IP-PUO"/>
                         </constraints>

@@ -1,0 +1,22 @@
+//
+//  SO-Form.css
+//  WebviewTest
+//
+//  Created by ECO0542-HoangNM on 10/08/2022.
+//
+
+
+@font-face
+{
+    font-family: 'DIN Pro';
+    src: url('DINPro.ttf') format('truetype');
+}
+
+
+h1
+{
+    font-family: 'DIN Pro';
+    font-size: 100px;
+    font-weight: normal;
+}
+

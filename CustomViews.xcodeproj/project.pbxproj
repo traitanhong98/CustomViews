@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A38D4942A0DF8F60043DE06 /* HSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A38D4932A0DF8F60043DE06 /* HSwitchView.swift */; };
 		2A60DF732836301B00AFE8E4 /* MultiTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60DF722836301B00AFE8E4 /* MultiTableView.m */; };
 		2A60DF782836314900AFE8E4 /* ThemeSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60DF772836314900AFE8E4 /* ThemeSpinner.m */; };
 		2A60DF7A283631AD00AFE8E4 /* H_MultiTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A60DF79283631AD00AFE8E4 /* H_MultiTableView.swift */; };
@@ -43,7 +44,6 @@
 		2A9E02E42702B33E00ACEEE4 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E02E22702B33E00ACEEE4 /* PopupViewController.swift */; };
 		2A9E02E52702B33E00ACEEE4 /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9E02E32702B33E00ACEEE4 /* PopupViewController.xib */; };
 		2A9E02E82702B3F600ACEEE4 /* BasePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E02E62702B3F600ACEEE4 /* BasePopupViewController.swift */; };
-		2A9E02E92702B3F600ACEEE4 /* BasePopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9E02E72702B3F600ACEEE4 /* BasePopupViewController.xib */; };
 		2AC7E96A280E65B70061EF16 /* CTRun+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC7E95E280E65B70061EF16 /* CTRun+Swift.swift */; };
 		2AC7E96B280E65B70061EF16 /* CTStringAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC7E95F280E65B70061EF16 /* CTStringAttribute.swift */; };
 		2AC7E96C280E65B70061EF16 /* CTLine+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC7E960280E65B70061EF16 /* CTLine+Swift.swift */; };
@@ -82,6 +82,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A38D4932A0DF8F60043DE06 /* HSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSwitchView.swift; sourceTree = "<group>"; };
 		2A60DF702836301900AFE8E4 /* CustomViews-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomViews-Bridging-Header.h"; sourceTree = "<group>"; };
 		2A60DF712836301A00AFE8E4 /* MultiTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiTableView.h; sourceTree = "<group>"; };
 		2A60DF722836301B00AFE8E4 /* MultiTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiTableView.m; sourceTree = "<group>"; };
@@ -127,7 +128,6 @@
 		2A9E02E22702B33E00ACEEE4 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		2A9E02E32702B33E00ACEEE4 /* PopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
 		2A9E02E62702B3F600ACEEE4 /* BasePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePopupViewController.swift; sourceTree = "<group>"; };
-		2A9E02E72702B3F600ACEEE4 /* BasePopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasePopupViewController.xib; sourceTree = "<group>"; };
 		2AC7E95E280E65B70061EF16 /* CTRun+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CTRun+Swift.swift"; sourceTree = "<group>"; };
 		2AC7E95F280E65B70061EF16 /* CTStringAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTStringAttribute.swift; sourceTree = "<group>"; };
 		2AC7E960280E65B70061EF16 /* CTLine+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CTLine+Swift.swift"; sourceTree = "<group>"; };
@@ -173,6 +173,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A38D4922A0DF8E00043DE06 /* Toggle */ = {
+			isa = PBXGroup;
+			children = (
+				2A38D4932A0DF8F60043DE06 /* HSwitchView.swift */,
+			);
+			path = Toggle;
+			sourceTree = "<group>";
+		};
 		2A60DF6F2836300B00AFE8E4 /* MultiTableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +239,7 @@
 		2A9E026F26FEF70F00ACEEE4 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				2A38D4922A0DF8E00043DE06 /* Toggle */,
 				2A60DF6F2836300B00AFE8E4 /* MultiTableView */,
 				2AF7A51A28164C4C005E60AF /* StackView */,
 				2AC7E95D280E65B70061EF16 /* CoreTextSwift */,
@@ -334,7 +343,6 @@
 				2A9E02E22702B33E00ACEEE4 /* PopupViewController.swift */,
 				2A9E02E32702B33E00ACEEE4 /* PopupViewController.xib */,
 				2A9E02E62702B3F600ACEEE4 /* BasePopupViewController.swift */,
-				2A9E02E72702B3F600ACEEE4 /* BasePopupViewController.xib */,
 			);
 			path = CustomPopup;
 			sourceTree = "<group>";
@@ -489,7 +497,6 @@
 				2AF7A52628164C9B005E60AF /* ConstrantSubView.xib in Resources */,
 				2A9E02BE26FF051C00ACEEE4 /* IncrementInputView.xib in Resources */,
 				2A8061F3274DD25E00A9DE44 /* LabelViewController.xib in Resources */,
-				2A9E02E92702B3F600ACEEE4 /* BasePopupViewController.xib in Resources */,
 				2A60DF7F28363F3700AFE8E4 /* MultiTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -538,6 +545,7 @@
 				2A9E027126FEF70F00ACEEE4 /* AppDelegate.swift in Sources */,
 				2AF7A52028164C75005E60AF /* LabelSubView.swift in Sources */,
 				2AC7E974280E65B70061EF16 /* CFAttributedString+CoreText.swift in Sources */,
+				2A38D4942A0DF8F60043DE06 /* HSwitchView.swift in Sources */,
 				2A9E02AE26FEF7C500ACEEE4 /* View+Extension.swift in Sources */,
 				2AC7E972280E65B70061EF16 /* Array+CGGlyph.swift in Sources */,
 				2AC7E96C280E65B70061EF16 /* CTLine+Swift.swift in Sources */,
